@@ -19,7 +19,7 @@ const fetchUserData = async (userlogin) => {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
-        Authorization: `Bearer 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`,
+        Authorization: `Bearer ${secrets.GITHUB_API_TOKEN}`,
       },
       body: JSON.stringify({
         query: `
